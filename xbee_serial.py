@@ -11,7 +11,7 @@ def main():
     try:
         device.open()
         xbee_network = device.get_network()
-        
+        device.set_node_id('J2')
         # remote_device = xbee_network.discover_device()
         print(device.get_node_id())
     
